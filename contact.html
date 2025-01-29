@@ -6,8 +6,6 @@
     <title>Contact Jaisal</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-
-
 </head>
 <body>
     <nav>
@@ -17,12 +15,16 @@
 
     <section class="one-col">
         <h1>Contact Jaisal Patel</h1>
-        <p>460 Barnett Shoals Rd, Athens, GA &#8226; (770) 833-8486 &#8226; <a href="mailto:jaip1127@gmail.com">jaip1127@gmail.com</a></p>
+        <p>460 Barnett Shoals Rd, Athens, GA &#8226; (770) 833-8486 &#8226; 
+        <a href="mailto:jaip1127@gmail.com">jaip1127@gmail.com</a></p>
     </section>
 
     <hr>
 
-    <form action="thankyou.html" method="get">
+    <form action="https://formsubmit.co/jaip1127@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://jaip1127.github.io/personal-cv/thankyou.html">
+
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required><br>
 
@@ -30,7 +32,7 @@
         <input type="email" id="email" name="email" required><br>
 
         <label for="message">Message:</label>
-        <textarea id="message" name="message" style="width:30%;height:30px;"></textarea><br>
+        <textarea id="message" name="message" required></textarea><br>
 
         <button type="submit">Submit</button>
     </form>
